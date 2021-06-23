@@ -1,0 +1,20 @@
+$font-family: 'Rubik', sans-serif;
+$dark-color: #1b1b1b;
+$dark-green-color: lighten(#093a04,10%);
+$darker-green-color: #093a04;
+$default-bg-color: beige;
+$red-color: #fc3f3f;
+$green-color: #48e860;
+$light-color: #fff;
+
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+ 
