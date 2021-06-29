@@ -140,7 +140,7 @@ $(document).ready(function () {
         }
     })
     // testimonials sec
-    // let outerBtns = $('.outer');
+    let outerBtns = $('.outer');
 
 
    
@@ -237,77 +237,77 @@ $(document).ready(function () {
     // })
 
 
-    // // code fo limit of items to display
-    // $('#limit-to-show').change(function (e) {
-    //     let limit = e.target.value;
-    //     let currentPrice = $('#price-range').val();
-    //     console.log('currentPrice', currentPrice)
-    //     console.log('limit',limit)
-    //     filterNDisplayFoodItems(currentPrice,limit)
+    // code fo limit of items to display
+    $('#limit-to-show').change(function (e) {
+        let limit = e.target.value;
+        let currentPrice = $('#price-range').val();
+        console.log('currentPrice', currentPrice)
+        console.log('limit',limit)
+        filterNDisplayFoodItems(currentPrice,limit)
 
         
-    // })
+    })
 
-    // //  code to display based on price range
-    // $('#price-range').change(function (e) {
+    //  code to display based on price range
+    $('#price-range').change(function (e) {
 
-    //     let currentPrice = e.target.value;
-    //     let limit = $('#limit-to-show').val()
-    //     filterNDisplayFoodItems(currentPrice, limit)
+        let currentPrice = e.target.value;
+        let limit = $('#limit-to-show').val()
+        filterNDisplayFoodItems(currentPrice, limit)
         
-    // })
+    })
 
-    // function filterNDisplayFoodItems(currentPrice, limit = 10) {
-    //     console.log('min',$('#price-range').attr('min'))
-    //     console.log(currentPrice)
-    //     $('#selectedFoods').empty()
-    //     $.getJSON('food-items.json', function (data) {
-    //         // first of filter  all incoming inputs
-    //         let filteredArray = data.filter(function (food) {
-    //             if (food.price <= currentPrice && food.price >= $('#price-range').attr('min')) {
-    //                 return food;
+    function filterNDisplayFoodItems(currentPrice, limit = 10) {
+        console.log('min',$('#price-range').attr('min'))
+        console.log(currentPrice)
+        $('.selectedFoods').empty()
+        $.getJSON('food-items.json', function (data) {
+            // first of filter  all incoming inputs
+            let filteredArray = data.filter(function (food) {
+                if (food.price <= currentPrice && food.price >= $('#price-range').attr('min')) {
+                    return food;
                     
-    //             }
+                }
                 
-    //         })
-    //         console.log('filter', filteredArray)
-    //         // then set a limit to the amount of results you want shown 
-    //         filteredArray = filteredArray.splice(0,limit)
-    //         console.log('filter after limit', filteredArray)
-    //         $.map(filteredArray,function ({title,price,description,image}) {
-    //             if (price <= currentPrice && price >= $('#price-range').attr('min')) {
+            })
+            console.log('filter', filteredArray)
+            // then set a limit to the amount of results you want shown 
+            filteredArray = filteredArray.splice(0,limit)
+            console.log('filter after limit', filteredArray)
+            $.map(filteredArray,function ({title,price,description,image}) {
+                if (price <= currentPrice && price >= $('#price-range').attr('min')) {
 
-    //                 $('#selectedFoods').append(
-    //                     `
-    //                     <div class="food-item">
-    //                         <div class="picture" style="background-image: url('assets/${image || 'sandwich-2977251_1920.jpg'}');">
-    //                             <div class="price">
-    //                                 <span class="text-light">
-    //                                     ₦${price} <sup class="text-light">.00</sup>
-    //                                 </span>
-    //                             </div>
-    //                             <div class="like bg-light">i</div>
+                    $('.selectedFoods').append(
+                        `
+                        <div class="food-item">
+                            <div class="picture" style="background-image: url('assets/${image || 'sandwich-2977251_1920.jpg'}');">
+                                <div class="price">
+                                    <span class="text-light">
+                                        ₦${price} <sup class="text-light">.00</sup>
+                                    </span>
+                                </div>
+                                <div class="like bg-light">i</div>
                                 
-    //                         </div>
-    //                         <h6>${title} </h6>
-    //                         <p>${description}</p>
-    //                         <a href="" class="btn btn-secondary">Order Now</a>
-    //                     </div>
+                            </div>
+                            <h6>${title} </h6>
+                            <p>${description}</p>
+                            <a href="#notInsertedFunctionYet" class="btn btn-secondary">Order Now</a>
+                        </div>
                         
                         
                         
                         
                         
-    //                     `
-    //                 )
+                        `
+                    )
                     
-    //             }
+                }
                 
-    //         })
+            })
             
-    //     })
+        })
 
-    // }
+    }
 
 
 

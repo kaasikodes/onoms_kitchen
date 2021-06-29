@@ -140,174 +140,174 @@ $(document).ready(function () {
         }
     })
     // testimonials sec
-    // let outerBtns = $('.outer');
+    let outerBtns = $('.outer');
 
 
    
     
-    // for (let i = 0; i < outerBtns.length; i++) {
+    for (let i = 0; i < outerBtns.length; i++) {
         
         
-    //     outerBtns[i].addEventListener('click',function () {
+        outerBtns[i].addEventListener('click',function () {
 
-    //         clearInterval(testimonilaLoop)
-    //         showTestimonial(i);
-    //         // when done activate loop again
-    //         // testimonilaLoop()
+            clearInterval(testimonilaLoop)
+            showTestimonial(i);
+            // when done activate loop again
+            // testimonilaLoop()
            
 
            
 
 
             
-    //     })
+        })
         
-    // }
-    // // first of all let 1 testimonial show before interval begins
-    // showTestimonial(1)
-    // let i = 0
+    }
+    // first of all let 1 testimonial show before interval begins
+    showTestimonial(1)
+    let i = 0
 
     
-    // let testimonilaLoop = setInterval(() => {
+    let testimonilaLoop = setInterval(() => {
 
-    //     showTestimonial(i)
-    //     i++;
+        showTestimonial(i)
+        i++;
 
-    //     if (i == 3) {
+        if (i == 3) {
 
-    //         i = 0;
+            i = 0;
             
-    //     }
+        }
         
-    // }, 5000);
+    }, 5000);
 
    
     
 
-    // function showTestimonial(i) {
-    //     outerBtns.removeClass('active')
-    //     outerBtns[i].classList.add('active')
-    //     $(`.testimonial`).removeClass('active')
-    //     $(`.testimonial`).css({
-    //         opacity: 0
-    //     })
+    function showTestimonial(i) {
+        outerBtns.removeClass('active')
+        outerBtns[i].classList.add('active')
+        $(`.testimonial`).removeClass('active')
+        $(`.testimonial`).css({
+            opacity: 0
+        })
             
 
-    //     $(`.testimonial:nth-child(${i + 1})`).addClass('active')
-    //     $(`.testimonial:nth-child(${i + 1})`).animate({
-    //         opacity: 1
-    //     })
+        $(`.testimonial:nth-child(${i + 1})`).addClass('active')
+        $(`.testimonial:nth-child(${i + 1})`).animate({
+            opacity: 1
+        })
 
         
-    // }
+    }
     
 
-    // // code to show promises
-    // let promiseContent = $('.claim-content p')
-    // $('#quality-food').click(function (e) {
-    //     e.preventDefault()
-    //     $('.assistive-element').removeClass('active')
-    //     e.target.classList.add('active')
-    //     promiseContent.fadeOut(500)
-    //     // promiseContent.empty()
-    //     promiseContent.html('You won’t find better tasting food anywhere! The Yellow Plate’s meals are all freshly prepared with love by the best Chefs in the city of Abuja')
-    //     promiseContent.fadeIn(3000)
+    // code to show promises
+    let promiseContent = $('.claim-content p')
+    $('#quality-food').click(function (e) {
+        e.preventDefault()
+        $('.assistive-element').removeClass('active')
+        e.target.classList.add('active')
+        promiseContent.fadeOut(500)
+        // promiseContent.empty()
+        promiseContent.html('You won’t find better tasting food anywhere! The Yellow Plate’s meals are all freshly prepared with love by the best Chefs in the city of Abuja')
+        promiseContent.fadeIn(3000)
         
-    // })
-    // $('#customer-service').click(function (e) {
-    //     e.preventDefault()
-    //     $('.assistive-element').removeClass('active')
-    //     e.target.classList.add('active')
-    //     promiseContent.fadeOut(500)
-    //     // promiseContent.empty()
-    //     promiseContent.html('We ensure each experience is unique with maximum satisfaction guaranteed.')
-    //     promiseContent.fadeIn(3000)
+    })
+    $('#customer-service').click(function (e) {
+        e.preventDefault()
+        $('.assistive-element').removeClass('active')
+        e.target.classList.add('active')
+        promiseContent.fadeOut(500)
+        // promiseContent.empty()
+        promiseContent.html('We ensure each experience is unique with maximum satisfaction guaranteed.')
+        promiseContent.fadeIn(3000)
         
-    // })
-    // $('#fast-food').click(function (e) {
-    //     e.preventDefault()
-    //     $('.assistive-element').removeClass('active')
-    //     e.target.classList.add('active')
-    //     promiseContent.fadeOut(500)
-    //     // promiseContent.empty()
-    //     promiseContent.html(`We know you can’t wait to dig in, that’s why we make sure that your meals get delivered to your doorstep in minutes. Wherever you may be!
-    //     We are the premier online food delivery service available 24-hours a day.`)
-    //     promiseContent.fadeIn(3000)
+    })
+    $('#fast-food').click(function (e) {
+        e.preventDefault()
+        $('.assistive-element').removeClass('active')
+        e.target.classList.add('active')
+        promiseContent.fadeOut(500)
+        // promiseContent.empty()
+        promiseContent.html(`We know you can’t wait to dig in, that’s why we make sure that your meals get delivered to your doorstep in minutes. Wherever you may be!
+        We are the premier online food delivery service available 24-hours a day.`)
+        promiseContent.fadeIn(3000)
         
-    // })
+    })
 
 
-    // // code fo limit of items to display
-    // $('#limit-to-show').change(function (e) {
-    //     let limit = e.target.value;
-    //     let currentPrice = $('#price-range').val();
-    //     console.log('currentPrice', currentPrice)
-    //     console.log('limit',limit)
-    //     filterNDisplayFoodItems(currentPrice,limit)
+    // code fo limit of items to display
+    $('#limit-to-show').change(function (e) {
+        let limit = e.target.value;
+        let currentPrice = $('#price-range').val();
+        console.log('currentPrice', currentPrice)
+        console.log('limit',limit)
+        filterNDisplayFoodItems(currentPrice,limit)
 
         
-    // })
+    })
 
-    // //  code to display based on price range
-    // $('#price-range').change(function (e) {
+    //  code to display based on price range
+    $('#price-range').change(function (e) {
 
-    //     let currentPrice = e.target.value;
-    //     let limit = $('#limit-to-show').val()
-    //     filterNDisplayFoodItems(currentPrice, limit)
+        let currentPrice = e.target.value;
+        let limit = $('#limit-to-show').val()
+        filterNDisplayFoodItems(currentPrice, limit)
         
-    // })
+    })
 
-    // function filterNDisplayFoodItems(currentPrice, limit = 10) {
-    //     console.log('min',$('#price-range').attr('min'))
-    //     console.log(currentPrice)
-    //     $('#selectedFoods').empty()
-    //     $.getJSON('food-items.json', function (data) {
-    //         // first of filter  all incoming inputs
-    //         let filteredArray = data.filter(function (food) {
-    //             if (food.price <= currentPrice && food.price >= $('#price-range').attr('min')) {
-    //                 return food;
+    function filterNDisplayFoodItems(currentPrice, limit = 10) {
+        console.log('min',$('#price-range').attr('min'))
+        console.log(currentPrice)
+        $('.selectedFoods').empty()
+        $.getJSON('food-items.json', function (data) {
+            // first of filter  all incoming inputs
+            let filteredArray = data.filter(function (food) {
+                if (food.price <= currentPrice && food.price >= $('#price-range').attr('min')) {
+                    return food;
                     
-    //             }
+                }
                 
-    //         })
-    //         console.log('filter', filteredArray)
-    //         // then set a limit to the amount of results you want shown 
-    //         filteredArray = filteredArray.splice(0,limit)
-    //         console.log('filter after limit', filteredArray)
-    //         $.map(filteredArray,function ({title,price,description,image}) {
-    //             if (price <= currentPrice && price >= $('#price-range').attr('min')) {
+            })
+            console.log('filter', filteredArray)
+            // then set a limit to the amount of results you want shown 
+            filteredArray = filteredArray.splice(0,limit)
+            console.log('filter after limit', filteredArray)
+            $.map(filteredArray,function ({title,price,description,image}) {
+                if (price <= currentPrice && price >= $('#price-range').attr('min')) {
 
-    //                 $('#selectedFoods').append(
-    //                     `
-    //                     <div class="food-item">
-    //                         <div class="picture" style="background-image: url('assets/${image || 'sandwich-2977251_1920.jpg'}');">
-    //                             <div class="price">
-    //                                 <span class="text-light">
-    //                                     ₦${price} <sup class="text-light">.00</sup>
-    //                                 </span>
-    //                             </div>
-    //                             <div class="like bg-light">i</div>
+                    $('.selectedFoods').append(
+                        `
+                        <div class="food-item">
+                            <div class="picture" style="background-image: url('assets/${image || 'sandwich-2977251_1920.jpg'}');">
+                                <div class="price">
+                                    <span class="text-light">
+                                        ₦${price} <sup class="text-light">.00</sup>
+                                    </span>
+                                </div>
+                                <div class="like bg-light">i</div>
                                 
-    //                         </div>
-    //                         <h6>${title} </h6>
-    //                         <p>${description}</p>
-    //                         <a href="" class="btn btn-secondary">Order Now</a>
-    //                     </div>
+                            </div>
+                            <h6>${title} </h6>
+                            <p>${description}</p>
+                            <a href="#notInsertedFunctionYet" class="btn btn-secondary">Order Now</a>
+                        </div>
                         
                         
                         
                         
                         
-    //                     `
-    //                 )
+                        `
+                    )
                     
-    //             }
+                }
                 
-    //         })
+            })
             
-    //     })
+        })
 
-    // }
+    }
 
 
 

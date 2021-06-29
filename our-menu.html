@@ -20,27 +20,33 @@
     <link href="/css/style.css" rel="stylesheet">
 
 
-    <title>Custom Restaurant</title>
+    <title>Onom's Kitchen</title>
 </head>
 <body>
+    <div class="single-order-form-overlay">
+        <div class="result container">
+
+        </div>
+
+    </div>
 
     <header>
         <!-- header into 3 -->
         <!-- logo -->
-        <div class="fixed-header-container">
+        <div class="my-header">
             <div class="logo-wrapper">
                 <div class="bar">
     
                     <div class="container">
                         <div class="logo">
-                            <a href="/home">
+                            <a href="/home" class="d-flex flex-column align-items-center justify-content-start">
         
                                 <div class="img-container">
-                                    <img src="/assets/logo.svg" alt="">
+                                    <img src="/assets/custom_logo.svg" alt="">
                                 </div>
-                                <div class="heading">
-                                    <h5 class="">Custom Restaurant</h5>
-                                    <p>Sweet Belle Full</p>
+                                <div class="heading text-center">
+                                    <h5 class="">Onom's Kitchen</h5>
+                                    <p class="text-white">Delicious Food</p>
                                 </div>
                             </a>
                         </div>
@@ -50,22 +56,27 @@
                
             </div>
             <!-- phn n utlty -->
-            <div class="container esntls-wrapper">
-                <div class="esntls-wrapper-section bg-light text-center card box-shadow-lg" >
-                    <i class="fas fa-phone font-weight-bold esntls-wrapper-section-item"></i>
-                    <a href="tel:+2348144893734" class= "font-weight-bold esntls-wrapper-section-item">08144893734</a>
+            <div class="container esntls-wrapper d-flex  mt-5 my-md-0 flex-md-row">
+                <div class="esntls-wrapper-section bg-white text-center card box-shadow-lg" >
+                    <a href="tel:+2348144893734" class="esntls-wrapper-section-item">
+                        <i class="fas fa-phone font-weight-bold esntl-icon"></i>
+                        <span  class= "font-weight-bold esntl-icon">08144893734</span>
+
+                    </a>
+                    
+                    
                 </div>
-                <div class="esntls-wrapper-section bg-light text-center card box-shadow-lg"">
+                <div class="esntls-wrapper-section bg-white text-center card box-shadow-lg">
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-facebook esntl-icon"></i>
     
                     </a>
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-instagram esntl-icon"></i>
     
                     </a>
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-twitter esntl-icon"></i>
     
                     </a>
                 </div>
@@ -76,22 +87,31 @@
         
     </header>
     <!-- navigation -->
-    <nav>
+    <nav class="mt-5 pt-5">
         <div class="container">
             <ul>
-                <li>
+                <li class="order-2">
                     <a href="/">Home</a>
                 </li>
-                <li>
-                    <a href="/menu">Our Menu</a>
+                <li class="order-2">
+                    <a href="/our-menu.html">Our Menu</a>
                 </li>
-                <li>
-                    <a href="/">About Us</a>
+                <li class="order-2">
+                    <a href="/about-us.html">About Us</a>
+                </li>
+                <!-- <li class="order-2">
+                    <a href="/about-us.html">Sign Up</a>
+                </li> -->
+                <li class="order-md-3">
+                    <a href="/checkout.html">
+                        
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-primary items-in-cart">0</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
-
 
     <div class="main-wrapper" id="our-menu">
 
@@ -228,7 +248,7 @@
                     </div>
                     <div class="content">
 
-                        <div class="food-items" id="selectedFoods">
+                        <div class="food-items selectedFoods">
                    
                             <div class="food-item">
                                 <div class="picture" style="background-image: url('assets/piza-3010062_1920.jpg');">
@@ -242,7 +262,7 @@
                                 </div>
                                 <h6>Assorted Pasta </h6>
                                 <p>Italian Pasta, Sausages, Chicken, Shredded beef, Vegetables, italian seasoning, and Mixed Bell peppers</p>
-                                <a href="" class="btn btn-secondary">Order Now</a>
+                                <a href="orders/burger.html" class="btn btn-secondary">Order Now</a>
                             </div>
                             
                             <div class="food-item">
@@ -258,7 +278,7 @@
                                 </div>
                                 <h6>Assorted Pasta </h6>
                                 <p>Italian Pasta, Sausages, Chicken, Shredded beef, Vegetables, italian seasoning, and Mixed Bell peppers</p>
-                                <a href="" class="btn btn-secondary">Order Now</a>
+                                <a href="orders/burger.html" class="btn btn-secondary">Order Now</a>
                             </div>
                             
                             <div class="food-item">
@@ -274,7 +294,7 @@
                                 </div>
                                 <h6>Assorted Pasta </h6>
                                 <p>Italian Pasta, Sausages, Chicken, Shredded beef, Vegetables, italian seasoning, and Mixed Bell peppers</p>
-                                <a href="" class="btn btn-secondary">Order Now</a>
+                                <a href="orders/burger.html" class="btn btn-secondary">Order Now</a>
                             </div>
                             
                             <div class="food-item">
@@ -290,7 +310,7 @@
                                 </div>
                                 <h6>Assorted Pasta </h6>
                                 <p>Italian Pasta, Sausages, Chicken, Shredded beef, Vegetables, italian seasoning, and Mixed Bell peppers</p>
-                                <a href="" class="btn btn-secondary">Order Now</a>
+                                <a href="orders/burger.html" class="btn btn-secondary">Order Now</a>
                             </div>
                             <div class="food-item">
                                 <div class="picture" style="background-image: url('assets/sandwich-2977251_1920.jpg');">
@@ -305,7 +325,7 @@
                                 </div>
                                 <h6>Assorted Pasta </h6>
                                 <p>Italian Pasta, Sausages, Chicken, Shredded beef, Vegetables, italian seasoning, and Mixed Bell peppers</p>
-                                <a href="" class="btn btn-secondary">Order Now</a>
+                                <a href="orders/burger.html" class="btn btn-secondary">Order Now</a>
                             </div>
                             
                                
@@ -331,18 +351,18 @@
                             <h4>Information</h4>
                             <ul>
                                 <li>
-                                    <a href="">Home</a>
+                                    <a href="/index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a href="">Our Home</a>
+                                    <a href="/about-us.html">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="">Terms and Conditions</a>
+                                    <a href="/terms.html">Terms and Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="">Privacy Policy</a>
+                                    <a href="/privacy.html">Privacy Policy</a>
                                 </li>
-                            </ul>
+                            </ul>   
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
@@ -350,16 +370,16 @@
                             <h4>Extras</h4>
                             <ul>
                                 <li>
-                                    <a href="">My Order</a>
+                                    <a href="/our-menu.html">Our Menu</a>
                                 </li>
                                 <li>
-                                    <a href="">Check Out</a>
+                                    <a href="/checkout.html">My Orders</a>
                                 </li>
                                 <li>
-                                    <a href="">FAQs</a>
+                                    <a href="/faqa.html">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="">Contact Us</a>
+                                    <a href="/contact.html">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -377,7 +397,7 @@
                                 <li>
                                     <a href="">
                                         <i>i</i>
-                                        <span>12, Goba Close, Wuse 2</span>
+                                        <span>Zicson Plaza, Gombe Line, Gombe.</span>
                                     </a>
                                 </li>
                                 <li>
@@ -430,7 +450,6 @@
                     <div class="col-md-6 col-12">
                         <p class="copy-right text-md-right">
                             &copy; All rights reserved
-                           
                         </pl>
                     </div>
                 </div>
@@ -442,6 +461,6 @@
 
     
     <script src="/vendor/js/jquery.js"></script>
-    <script src="app.js"></script>
+    <script src="our-menu.js"></script>
 </body>
 </html>

@@ -3,9 +3,11 @@ $dark-color: #1b1b1b;
 $dark-green-color: lighten(#093a04,10%);
 $darker-green-color: #093a04;
 $default-bg-color: beige;
-$red-color: #fc3f3f;
+$red-color: #b90303;
 $green-color: #48e860;
 $light-color: #fff;
+$logo-con-color: #28a745;
+$logo-dark-con-color: #247e39;
 
 
 
@@ -16,5 +18,19 @@ $light-color: #fff;
 
     
 }
+
+.bg-my-green:hover{
+    background-color: $logo-con-color;
+    border-color: $logo-con-color;
+
+}
+.bg-my-green{
+    background-color: $logo-dark-con-color;
+    border-color: $logo-dark-con-color;
+
+}
+
+
+
 
  

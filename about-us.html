@@ -20,27 +20,29 @@
     <link href="/css/style.css" rel="stylesheet">
 
 
-    <title>Custom Restaurant</title>
+    <title>Onom's Kitchen</title>
 </head>
 <body id="about-body">
 
-    <header >
+    
+
+    <header>
         <!-- header into 3 -->
         <!-- logo -->
-        <div class="fixed-header-container" id="about-header">
+        <div class="my-header">
             <div class="logo-wrapper">
                 <div class="bar">
     
                     <div class="container">
                         <div class="logo">
-                            <a href="/home">
+                            <a href="/home" class="d-flex flex-column align-items-center justify-content-start">
         
                                 <div class="img-container">
-                                    <img src="/assets/logo.svg" alt="">
+                                    <img src="/assets/custom_logo.svg" alt="">
                                 </div>
-                                <div class="heading">
-                                    <h5 class="">Custom Restaurant</h5>
-                                    <p>Sweet Belle Full</p>
+                                <div class="heading text-center">
+                                    <h5 class="">Onom's Kitchen</h5>
+                                    <p class="text-white">Delicious Food</p>
                                 </div>
                             </a>
                         </div>
@@ -50,22 +52,27 @@
                
             </div>
             <!-- phn n utlty -->
-            <div class="container esntls-wrapper">
-                <div class="esntls-wrapper-section bg-light text-center card box-shadow-lg" >
-                    <i class="fas fa-phone font-weight-bold esntls-wrapper-section-item"></i>
-                    <a href="tel:+2348144893734" class= "font-weight-bold esntls-wrapper-section-item">08144893734</a>
+            <div class="container esntls-wrapper d-flex  mt-5 my-md-0 flex-md-row">
+                <div class="esntls-wrapper-section bg-white text-center card box-shadow-lg" >
+                    <a href="tel:+2348144893734" class="esntls-wrapper-section-item">
+                        <i class="fas fa-phone font-weight-bold esntl-icon"></i>
+                        <span  class= "font-weight-bold esntl-icon">08144893734</span>
+
+                    </a>
+                    
+                    
                 </div>
-                <div class="esntls-wrapper-section bg-light text-center card box-shadow-lg"">
+                <div class="esntls-wrapper-section bg-white text-center card box-shadow-lg">
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-facebook esntl-icon"></i>
     
                     </a>
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-instagram esntl-icon"></i>
     
                     </a>
                     <a class="esntls-wrapper-section-item">
-                        <i></i>
+                        <i class="fab fa-twitter esntl-icon"></i>
     
                     </a>
                 </div>
@@ -76,17 +83,27 @@
         
     </header>
     <!-- navigation -->
-    <nav>
+    <nav class="mt-5 pt-5">
         <div class="container">
             <ul>
-                <li>
+                <li class="order-2">
                     <a href="/">Home</a>
                 </li>
-                <li>
-                    <a href="/menu">Our Menu</a>
+                <li class="order-2">
+                    <a href="/our-menu.html">Our Menu</a>
                 </li>
-                <li>
-                    <a href="/">About Us</a>
+                <li class="order-2">
+                    <a href="/about-us.html">About Us</a>
+                </li>
+                <!-- <li class="order-2">
+                    <a href="/about-us.html">Sign Up</a>
+                </li> -->
+                <li class="order-md-3">
+                    <a href="/checkout.html">
+                        
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-primary items-in-cart">0</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -105,11 +122,11 @@
         <div class="ash-box">
             <div class="about-content text-center">
                 <h2>
-                    The Yellow Plate is Abuja’s premier 24-hour online food delivery cafe & bistro.
+                    Onom's Kitchen is Gombe’s premier 24-hour online food delivery cafe & bistro.
                 </h2>
                 <p>
-                    Located in the heart of the city, The Yellow Plate is the place you come because you’re already friends of ours, or you soon will be. We love yummy food, authentic service, great libations and friendly faces.
-                    Available 24-hours day, our food delivery service is available to all parts of Abuja.
+                    Located in the heart of the city, Onom's Kitchen is the place you come because you’re already friends of ours, or you soon will be. We love yummy food, authentic service, great libations and friendly faces.
+                    Available 24-hours day, our food delivery service is available to all parts of Gombe.
                 </p>
                 <p>
                     We’re cooking ingredient-driven food where inspiration comes from our personal experiences or one of our many customers, past and present. 
@@ -146,7 +163,7 @@
                 <p>
                     We believe that eating our food is meant to be an amazing adventure. 
                     That’s why we use the best of ingredients in making meals hand crafted by seasoned 
-                    professionals to ensure that you get The Yellow Plate experience with each bite
+                    professionals to ensure that you get The Onom's Kitchen experience with each bite
 
                 </p>
            </div>
@@ -199,127 +216,124 @@
 
         
                  
-        <footer>
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                            <div class="footer-section">
-                                <h4>Information</h4>
-                                <ul>
-                                    <li>
-                                        <a href="">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Our Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Terms and Conditions</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                            <div class="footer-section">
-                                <h4>Extras</h4>
-                                <ul>
-                                    <li>
-                                        <a href="">My Order</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Check Out</a>
-                                    </li>
-                                    <li>
-                                        <a href="">FAQs</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                            <div class="footer-section">
-                                <h4>Get in Touch</h4>
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i>i</i>
-                                            <span>Mon - Sun: 24 hours</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i>i</i>
-                                            <span>12, Goba Close, Wuse 2</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i>i</i>
-                                            <span>0815 758 3086</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i>i</i>
-                                            <span>hungry@onomskitchen.com</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                            <div class="footer-section">
-                                <h4>We Accept</h4>
-                                <div class="card-img-containers">
-                                    <div class="card-img"></div>
-                                    <div class="card-img"></div>
-                                    <div class="card-img"></div>
-                                    <div class="card-img"></div>
-    
-                                </div>
-                                
-                            </div>
-                        </div>
+       <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="footer-section">
+                        <h4>Information</h4>
+                        <ul>
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="/about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/terms.html">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="/privacy.html">Privacy Policy</a>
+                            </li>
+                        </ul>   
                     </div>
                 </div>
-            </div>
-    
-            <div class="sub-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-12 my-4 my-md-0">
-                            <div class="social-icons">
-                                <a href="" class="social-icon">
-                                    <i>f</i>
-                                </a>
-                                <a href="" class="social-icon">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="footer-section">
+                        <h4>Extras</h4>
+                        <ul>
+                            <li>
+                                <a href="/our-menu.html">Our Menu</a>
+                            </li>
+                            <li>
+                                <a href="/checkout.html">My Orders</a>
+                            </li>
+                            <li>
+                                <a href="/faqa.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="footer-section">
+                        <h4>Get in Touch</h4>
+                        <ul>
+                            <li>
+                                <a href="">
                                     <i>i</i>
+                                    <span>Mon - Sun: 24 hours</span>
                                 </a>
-                            </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>i</i>
+                                    <span>Zicson Plaza, Gombe Line, Gombe.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>i</i>
+                                    <span>0815 758 3086</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>i</i>
+                                    <span>hungry@onomskitchen.com</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="footer-section">
+                        <h4>We Accept</h4>
+                        <div class="card-img-containers">
+                            <div class="card-img"></div>
+                            <div class="card-img"></div>
+                            <div class="card-img"></div>
+                            <div class="card-img"></div>
+
                         </div>
-    
-                        <div class="col-md-6 col-12">
-                            <p class="copy-right text-md-right">
-                                &copy; All rights reserved
-                               
-                            </pl>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12 my-4 my-md-0">
+                    <div class="social-icons">
+                        <a href="" class="social-icon">
+                            <i>f</i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i>i</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <p class="copy-right text-md-right">
+                        &copy; All rights reserved
+                    </pl>
+                </div>
+            </div>
+        </div>
+    </div>
        
     </div>
 
 
     
     <script src="/vendor/js/jquery.js"></script>
-    <script src="app.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>

@@ -12,11 +12,12 @@
 }
 
 a{
-    color: $dark-color;
+    
+    color: $light-color;
     transition: all 0.3s ease;
 }
 a:hover{
-    color: lighten($dark-color, 25%);
+    color: $red-color;
     text-decoration: none;
 
 }
@@ -66,15 +67,20 @@ img{
 
 header{
     position: relative;
-    height: 210px;
+    min-height: 180px;
     z-index: 999599;
-   
-    
-    .fixed-header-container{
-        position: fixed;
+
+   .my-header{
+       transition: all 500ms ease;
+       color:transparent;
+       position: fixed;
         width: 100%;
+   }
+    
+    .my-header.fixed-header-container{
         
-        background-color: #fff;
+        
+        background-color: $default-bg-color;
         
     }
 }
@@ -97,7 +103,7 @@ header{
                 width: 0;
                 border-width: 20px 50px;
                 border-style: solid;
-                border-color: $dark-green-color transparent transparent $dark-green-color ;
+                border-color: $logo-con-color transparent transparent $logo-con-color ;
                 // bottom: -40px;
                 right:0 ;
                 bottom: -40px;
@@ -111,7 +117,7 @@ header{
             min-height: 90px;
             max-height: 90px;
             padding: 15px 15px 0 15px;
-            background: $dark-green-color;
+            background: $logo-con-color;
             left:50%;
             margin-left: -100px;
 
@@ -122,7 +128,7 @@ header{
                 width: 0;
                 border-width: 20px 50px;
                 border-style: solid;
-                border-color: $dark-green-color $dark-green-color transparent transparent;
+                border-color: $logo-con-color $logo-con-color transparent transparent;
                 // bottom: -40px;
                 left:0 ;
                 bottom: -40px;
@@ -143,7 +149,7 @@ header{
                     position: absolute; 
                     top: -15px;
                     left: -35px;
-                    border-color:  transparent $darker-green-color $darker-green-color transparent;
+                    border-color:  transparent $logo-dark-con-color $logo-dark-con-color transparent;
                     z-index: -1;
 
 
@@ -151,25 +157,33 @@ header{
 
 
                 .img-container{
-                    width: 80px;
+                    width: 70px;
+                    
                     
                 }
 
                 .heading{
-                    position: relative;
-                    top: -50px;
-                    left: 20px;
+                   
+                    margin-top: -15px;
 
                     
                     h5{
                         font-size: 16px;
-                        margin-bottom: 0;
-                        text-shadow: 2px 2px 5px rgb(255, 64, 42);
+                        font-weight: 900;
+                        margin-bottom: 1.2px;
+                        color: $red-color;
+                        letter-spacing: .115em;
+                        
+                        
                     }
 
                     p{
                         font-size: 8px;
+                        font-weight: 600;
+                        text-transform: uppercase;
                         letter-spacing: .2rem;
+                        
+                        
                     }
                 }
 
@@ -183,7 +197,7 @@ header{
                     position: absolute; 
                     top: -15px;
                     left: 185px;
-                    border-color:  transparent transparent $darker-green-color $darker-green-color;
+                    border-color:  transparent transparent $logo-dark-con-color $logo-dark-con-color;
                     z-index: -1;
 
 
@@ -214,6 +228,18 @@ header{
         
         &-item{
             margin-right: 10px;
+           
+            color: $dark-color !important;
+             
+        }
+        &-item:hover{
+            
+           .esntl-icon{
+              color: $red-color !important;
+
+           }
+           
+             
         }
 
     }
@@ -226,10 +252,23 @@ header{
             height: 36px;
             border-radius: 50%;
             transition: all 0.3s ease;
+            background: $dark-color;
+            
+            .esntl-icon{
+                color: $light-color !important;
+                
+            
+            }
+            @include center;
         }
         .esntls-wrapper-section-item:hover{
             
-            background: $dark-green-color;
+            background: $red-color;
+            .esntl-icon{
+                color: $dark-color !important;
+                
+            
+            }
         }
         .esntls-wrapper-section-item:nth-last-of-type(1){
             margin-right: 0;
@@ -242,20 +281,20 @@ header{
 }
 
 nav{
-    
+    margin-top: 3rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     
     .container{
-        background: $red-color;
+        background: $logo-con-color;
         z-index: 2000;
-        border-radius: 20px;
+        border-radius: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 64px;
+        
         
 
         ul{
@@ -271,6 +310,19 @@ nav{
 
             li{
                 margin: 0 20px;
+                transition: all 300ms ease;
+                i{
+                    font-weight: 600;
+                    color:$light-color;
+                    transition: all 300ms ease;
+                }
+            }
+            li:hover{
+                
+                i{
+                    
+                    color:$red-color;
+                }
             }
 
         }
@@ -327,21 +379,27 @@ nav{
                     background-size: cover;
                     display: none;
                     
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     padding: 10px 40px 10px 40px;
     
                     .content{
-                        width: 500px;
+                        text-align: center;
+                        max-width: 900px;
                        
                         
                         h2{
                             color: $light-color;
-                            width: 500px;
-                            line-height: 71px;
-                            font-size: 61px;
                             
-                            font-weight: 700;
+                            line-height: 1.2;
+                            font-size: 3.5rem;
+                            
+                            font-weight: 500;
+                            margin-bottom: 40px;
+                        }
+                        .btn-lg{
+                            background-color: $red-color !important;
+                            border-color: $red-color !important;
                         }
     
     
@@ -354,7 +412,7 @@ nav{
     }
 
     .our-signature{
-        padding: 40px 0 150px 0;
+        padding: 150px 0;
         .container{
             .heading{
                
@@ -394,9 +452,13 @@ nav{
                 .container{
                     display: flex;
                     flex-direction: row;
-                    align-items: center ;
+                    @include center;
+                    flex-wrap: wrap;
+                    
                     .feature{
-                        flex-basis: 33%;
+                        flex-basis: 25%;
+                        padding: 50px 10px;
+                        min-width: 300px;
                         text-align: center;
                        
                         i{
@@ -525,7 +587,7 @@ nav{
             margin-top: 50px;
 
             .food-item:hover{
-                background-color: #faf4f4;
+                background-color: $light-color;
             }
     
 
@@ -535,7 +597,7 @@ nav{
     }
 
     .news-letter{
-        margin: 200px 0;
+        margin-top: 100px;
         background: $green-color;
         padding: 100px 0;
         form{
@@ -543,6 +605,7 @@ nav{
                 border-radius: 40px;
                 margin-left: 10px;
                 flex-grow: 1;
+                max-width: 75%;
             }
 
             button{
@@ -815,10 +878,11 @@ nav{
         .container{
             @include center;
             .content{
-                padding: 200px 0;
+                padding: 100px 0;
                 h1{
                     text-align: center;
                     color: $light-color;
+                    margin-bottom: 200px;
                 }
             }
         }
@@ -880,6 +944,7 @@ nav{
                     z-index: 5;
                     background-color: $default-bg-color;
                     color: $dark-color;
+                    outline: none;
                     
                     
                 }
@@ -991,3 +1056,38 @@ nav{
         }
     }
 }
+
+
+// single-order-form-overlay
+.single-order-form-overlay{
+    display: none;
+    position: fixed;
+    z-index: 30000000000;
+    background-color: rgba(245, 245, 220, 0.948);
+    
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+.single-order-form-overlay.active{
+    display: flex;
+    @include center;
+   
+}
+.bg-beige{
+    background: beige !important;
+}
+.single-order-form-overlay .result{
+    padding: 30px 0;
+    max-height: 700px;
+    overflow-y: scroll;
+   
+}
+
+.close-order-btn{
+    cursor: pointer;
+    
+}
+
+@import 'responsive_styles';
