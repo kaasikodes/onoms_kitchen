@@ -1,0 +1,23 @@
+{
+  "name": "onoms_kitchen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "about.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaasikodes/onoms_kitchen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://kaasikodes.github.io/onoms_kitchen",
+  "bugs": {
+    "url": "https://github.com/kaasikodes/onoms_kitchen/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
