@@ -1,0 +1,92 @@
+
+    <div class="container">
+       
+        <div class="card px-4 py-5">
+            <div class="mb-5 d-flex justify-content-end">
+                <p class = "close-order-btn">close</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 px-2 text-danger pr-4">
+                    <div class="img-container">
+                        <img src="/assets/piza-3010062_1920.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 px-2">
+                    <div class="heading mt-4 mt-md-0">
+                        <h3 class="text-uppercase font-weight-bold order-title text-success">Assorted Pizza</h3>
+                        <h5>Base Price : <span class="text-danger">N<span class="text-danger base-price">1000</span> <sup class="text-danger">.00</sup></span></h5>
+                        <p class="details">This meal comes with 12 pieces of akara and pap. However, you can add extras below;</p>
+                    </div>
+                    <form action="" method="post" class="mt-5 single-order-form">
+                        <h6 class="text-uppercase text-primary mb-4">Extras</h6>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="text-capitalize">
+                                        <th>name</th>
+                                        <th>Rate</th>
+                                        <th>quantity</th>
+                                        <th>total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr  data-name="pepperoni">
+                                        <td>Pepperoni</td>
+                                        <td>N<span>200</span>/svn</td>
+                                        <td>
+                                            <input type="number" name="pepperoni_quantity" id="" class="form-control w-50" min="0" max="30">
+                                        </td>
+                                        <td>
+                                            <span class="pepperoni_total">0</span>
+                                        </td>
+                                    </tr>
+                                   
+                                   
+                                    <tr data-name="crusting">
+                                        <td>Crusting</td>
+                                        <td>N<span>100</span>/svn</td>
+                                        <td>
+                                            <input type="number" name="crusting_quantity" id="" class="form-control w-50" min="0" max="30">
+                                        </td>
+                                        <td>
+                                            <span class="crusting_total">0</span>
+                                        </td>
+                                    </tr>
+                                   
+                                   
+                                    <tr data-name="milk">
+                                        <td>Milk</td>
+                                        <td>N<span>100</span>/svn</td>
+                                        
+                                        <td>
+                                            <input type="number" name="milk_quantity" id="" class="form-control w-50" min="0" max="30">
+                                        </td>
+                                        <td>
+                                            <span class="milk_total">0</span>
+                                        </td>
+                                    </tr>
+                                   
+                                   
+
+                                </tbody>
+                            </table>
+
+                            <div class="text-right mt-5">
+                                <h4>Total</h4>
+                                <h3 class="text-primary">N<span class="totalPrice text-primary">1000</span>.00</h3>
+                            </div>
+                            <div class="actions d-flex justify-content-end py-4 mt-4">
+                                
+                                
+                                <a href="" class="btn btn-success add-to-cart">Add to Cart</a>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+

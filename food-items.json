@@ -1,0 +1,49 @@
+[
+    {
+        "price": 2000,
+        "title": "Plaintain Chips",
+        "description": "The plainatain is oily af and only moves to the hot plate",
+        "image": "piza-3010062_1920.jpg"
+
+    },
+    {
+        "price": 1000,
+        "title": "As E de Hot",
+        "description": "The plainatain is oily af and only moves to the hot plate",
+        "image":"two-burgers-with-fries-and-sauce-3738755.jpg"
+
+    },
+    {
+        "price": 2500,
+        "title": "Shawarma",
+        "description": "The plainatain is oily af and only moves to the hot plate",
+        "image":"two-burgers-with-fries-and-sauce-3738755.jpg"
+
+
+    },
+    {
+        "price": 50000,
+        "title": "Caveat",
+        "description": "The plainatain is oily af and only moves to the hot plate",
+        "image": "cook-366875_1920.jpg"
+
+    },
+    {
+        "price": 500,
+        "title": "Yohghurt",
+        "description": "The plainatain is oily af and only moves to the hot plate"
+
+    },
+    {
+        "price": 500,
+        "title": "Tea n Bread",
+        "description": "The plainatain is oily af and only moves to the hot plate"
+
+    },
+    {
+        "price": 50,
+        "title": "Beans Porridge",
+        "description": "The plainatain is oily af and only moves to the hot plate"
+
+    }
+]
